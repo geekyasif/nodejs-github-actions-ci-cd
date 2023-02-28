@@ -7,8 +7,8 @@ on:
 
 env:
   IMAGE_NAME: geekyasif/nodejs-gitlab-ci-cd:nodejs-github-action
-  DOCKER_USERNAME: geekyasif
-  DOCKER_PASSWORD: Gr8king@8423
+  DOCKER_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+  DOCKER_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
 jobs:
   build-and-push:
